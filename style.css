@@ -1,5 +1,6 @@
 body {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: 'Inter', sans-serif;
 
   margin: 0;
   font-size: 16px;
@@ -164,6 +165,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .card__bg_info {
   position: absolute;
+
   top: 0;
   left: 0;
 
@@ -176,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   font-size: 16px;
 
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
   z-index: 2;
@@ -275,15 +277,31 @@ h1, h2, h3, h4, h5, h6 {
 .btn__block {
   margin: 0 10px 10px 10px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.btn__block--buy {
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+}
+
+.btn__block--price {
+  font-size: 25px;
+  line-height: 1;
+  margin-right: 5px;
+}
+
+.btn__block--day {
+  font-size: 15px;
+  line-height: 1.2;
+  color: #555;
 }
 
 .card__btn {
-  display: block; /* Делаем блочной для 100% ширины */
-  width: 100%;
-  text-align: center;
-  padding: 9px;
+  padding: 8px 14px;
   font-size: 15px;
   font-weight: 700;
   color: #000;
@@ -293,11 +311,14 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   transition: all 0.2s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
 }
 
 .card__btn:hover {
   color: #fff;
+  background-color: #e09400;
 }
+
 
 /* MODELS */
 .popup {
