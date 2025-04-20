@@ -185,12 +185,19 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 16px;
+  font-size: 13px;
+  padding: 5px;
 
   background: rgba(0, 0, 0, 0.9);
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
   z-index: 2;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.card__bg_info p {
+  margin-bottom: 4px;
 }
 
 .card__bg:hover .card__bg_info {
