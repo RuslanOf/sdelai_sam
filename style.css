@@ -343,6 +343,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .popup .phone__link {
   margin: 0;
+  color: #fff;
+  font-weight: 600;
 }
 
 .popup_dialog {
@@ -374,7 +376,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .popup_form {
-  padding: 23px; 
+  padding: 23px;
+  text-align: center;
 }
 
 .popup_close {
